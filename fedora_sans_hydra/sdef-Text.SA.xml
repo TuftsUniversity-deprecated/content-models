@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject PID="sdef:TuftsSA" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Tufts Submission Agreement Content Behavior Definition"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE=""/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2005-11-01T22:01:32.063Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2010-04-01T16:17:42.061Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="AUDIT" STATE="A" VERSIONABLE="false">
+    <foxml:datastreamVersion CREATED="2005-11-01T22:01:32.063Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
+      <foxml:xmlContent>
+        <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+          <audit:record ID="AUDREC1">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-03-10T16:55:41.392Z</audit:date>
+            <audit:justification>Ingested from local file /home/bgoodm01/sdef-TuftsSA.xml</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC2">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>METHODMAP</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-03-10T20:53:59.515Z</audit:date>
+            <audit:justification>added second method downloadSubmissionAgreement</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC3">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>modifyDatastreamByValue</audit:action>
+            <audit:componentID>METHODMAP</audit:componentID>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-03-17T15:39:46.646Z</audit:date>
+            <audit:justification>Added getSubmissionAgreementText method</audit:justification>
+          </audit:record>
+          <audit:record ID="AUDREC4">
+            <audit:process type="Fedora API-M"/>
+            <audit:action>ingest</audit:action>
+            <audit:componentID/>
+            <audit:responsibility>fedoraAdmin</audit:responsibility>
+            <audit:date>2010-04-01T16:17:42.061Z</audit:date>
+            <audit:justification>Ingested from local file /home/bgoodm01/sdef-TuftsSA.xml</audit:justification>
+          </audit:record>
+        </audit:auditTrail>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2005-05-25T20:33:57.600Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC.1" LABEL="Dublin Core Metadata" MIMETYPE="text/xml" SIZE="419">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Tufts Submission Agreement Content Behavior Definition</dc:title>
+          <dc:identifier>sdef:TuftsSA</dc:identifier>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="METHODMAP" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2009-10-26T14:52:11.072Z" ID="METHODMAP.0" LABEL="DCA Administrative Metadata"
+      MIMETYPE="text/xml" SIZE="248">
+      <foxml:xmlContent>
+        <fmm:MethodMap name="MethodMap for TDR Asset Profiles" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+          <fmm:Method label="Bitstream of the file" operationName="viewSubmissionAgreement"/>
+        </fmm:MethodMap>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-03-10T20:53:59.515Z" ID="METHODMAP.1" LABEL="DCA Administrative Metadata"
+      MIMETYPE="text/xml" SIZE="358">
+      <foxml:xmlContent>
+        <fmm:MethodMap name="MethodMap for TDR Asset Profiles" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+          <fmm:Method label="The file formatted for display" operationName="viewSubmissionAgreement"/>
+          <fmm:Method label="The raw file" operationName="downloadSubmissionAgreement"/>
+        </fmm:MethodMap>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+    <foxml:datastreamVersion CREATED="2010-03-17T15:39:46.646Z" ID="METHODMAP.2" LABEL="DCA Administrative Metadata"
+      MIMETYPE="text/xml" SIZE="479">
+      <foxml:xmlContent>
+        <fmm:MethodMap name="MethodMap for TDR Asset Profiles" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+          <fmm:Method label="The file formatted for display" operationName="viewSubmissionAgreement"/>
+          <fmm:Method label="The raw file" operationName="downloadSubmissionAgreement"/>
+          <fmm:Method label="The file's text for indexing" operationName="getSubmissionAgreementText"/>
+        </fmm:MethodMap>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

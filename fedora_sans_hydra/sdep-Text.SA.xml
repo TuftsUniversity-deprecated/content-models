@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject PID="sdep:Text.SA-TuftsType" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Generated deployment for cm:Text.SA (copy of bmech:TuftsType-Text.SA)"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE=""/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2010-03-03T22:00:14.080Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2010-04-01T16:18:03.060Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="DSINPUTSPEC" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-03-03T22:00:14.246Z"
+      FORMAT_URI="info:fedora/fedora-system:FedoraDSInputSpec-1.0" ID="DSINPUTSPEC1.0"
+      LABEL="Datastream Input Specification for Service" MIMETYPE="text/xml" SIZE="510">
+      <foxml:xmlContent>
+        <fbs:DSInputSpec bDefPID="bdef:TuftsType"
+          label="Datastream Input Specification for Tufts Type Behavior Mechanism - Text (SA)" xmlns:fbs="http://fedora.comm.nsdlib.org/service/bindspec">
+          <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="DCA-META">
+            <fbs:DSInputLabel>DCA_METADATA Binding</fbs:DSInputLabel>
+            <fbs:DSMIME>text/xml</fbs:DSMIME>
+            <fbs:DSInputInstruction/>
+          </fbs:DSInput>
+        </fbs:DSInputSpec>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="METHODMAP" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-03-03T22:00:14.247Z"
+      FORMAT_URI="info:fedora/fedora-system:FedoraSDepMethodMap-1.0" ID="METHODMAP1.0"
+      LABEL="Mapping of WSDL to Fedora notion of Method Definitions" MIMETYPE="text/xml" SIZE="1968">
+      <foxml:xmlContent>
+        <fmm:MethodMap bDefPID="bdef:TuftsType" name="MethodMap - Tufts Type Behavior Mechanism - Text (SA)" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+          <fmm:Method operationLabel="String identifier of the content model" operationName="getClass"
+            wsdlMsgName="getClassRequest" wsdlMsgOutput="dissemResponse">
+            <fmm:DefaultInputParm defaultValue="text" label="" parmName="CLASS" passBy="VALUE" required="true"/>
+            <fmm:DefaultInputParm defaultValue="http://stylesheets01.lib.tufts.edu/dl-xsl/return-class.xsl" label=""
+              parmName="XSLT" passBy="VALUE" required="true"/>
+            <fmm:DatastreamInputParm parmName="DCA-META" passBy="URL_REF" required="true"/>
+            <fmm:DefaultInputParm defaultValue="yes" label="" parmName="CLEAR_CACHE" passBy="VALUE" required="true"/>
+            <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="text/xml"/>
+          </fmm:Method>
+          <fmm:Method operationLabel="String identifying the content model implementation" operationName="getType"
+            wsdlMsgName="getTypeRequest" wsdlMsgOutput="dissemResponse">
+            <fmm:DefaultInputParm defaultValue="tufts/text/sa" label="" parmName="TYPE" passBy="VALUE" required="true"/>
+            <fmm:DefaultInputParm defaultValue="http://stylesheets01.lib.tufts.edu/dl-xsl/return-type.xsl" label=""
+              parmName="XSLT" passBy="VALUE" required="true"/>
+            <fmm:DatastreamInputParm parmName="DCA-META" passBy="URL_REF" required="true"/>
+            <fmm:DefaultInputParm defaultValue="yes" label="" parmName="CLEAR_CACHE" passBy="VALUE" required="true"/>
+            <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="text/xml"/>
+          </fmm:Method>
+        </fmm:MethodMap>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="WSDL" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-03-03T22:00:14.249Z" FORMAT_URI="http://schemas.xmlsoap.org/wsdl/"
+      ID="WSDL1.0" LABEL="WSDL definition of service" MIMETYPE="text/xml" SIZE="4161">
+      <foxml:xmlContent>
+        <wsdl:definitions name="Tufts Type Behavior Mechanism - Text (SA)" targetNamespace="bmech"
+          xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+          xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap"
+          xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="bmech"
+          xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <wsdl:types>
+            <xsd:schema targetNamespace="bmech">
+              <xsd:simpleType name="TYPEType">
+                <xsd:restriction base="xsd:string"/>
+              </xsd:simpleType>
+              <xsd:simpleType name="CLASSType">
+                <xsd:restriction base="xsd:string"/>
+              </xsd:simpleType>
+              <xsd:simpleType name="DCA_METADATAType">
+                <xsd:restriction base="xsd:string"/>
+              </xsd:simpleType>
+              <xsd:simpleType name="XSLTType">
+                <xsd:restriction base="xsd:string"/>
+              </xsd:simpleType>
+              <xsd:simpleType name="CLEAR_CACHEType">
+                <xsd:restriction base="xsd:string"/>
+              </xsd:simpleType>
+            </xsd:schema>
+          </wsdl:types>
+          <wsdl:message name="getClassRequest">
+            <wsdl:part name="CLASS" type="this:CLASSType"/>
+            <wsdl:part name="XSLT" type="this:XSLTType"/>
+            <wsdl:part name="DCA-META" type="this:DCA_METADATAType"/>
+            <wsdl:part name="CLEAR_CACHE" type="this:CLEAR_CACHEType"/>
+          </wsdl:message>
+          <wsdl:message name="getTypeRequest">
+            <wsdl:part name="TYPE" type="this:TYPEType"/>
+            <wsdl:part name="XSLT" type="this:XSLTType"/>
+            <wsdl:part name="DCA-META" type="this:DCA_METADATAType"/>
+            <wsdl:part name="CLEAR_CACHE" type="this:CLEAR_CACHEType"/>
+          </wsdl:message>
+          <wsdl:message name="dissemResponse">
+            <wsdl:part name="dissem" type="xsd:base64Binary"/>
+          </wsdl:message>
+          <wsdl:portType name="TuftsType-Text.SAPortType">
+            <wsdl:operation name="getClass">
+              <wsdl:input message="this:getClassRequest"/>
+              <wsdl:output message="this:dissemResponse"/>
+            </wsdl:operation>
+            <wsdl:operation name="getType">
+              <wsdl:input message="this:getTypeRequest"/>
+              <wsdl:output message="this:dissemResponse"/>
+            </wsdl:operation>
+          </wsdl:portType>
+          <wsdl:service name="TuftsType-Text.SA">
+            <wsdl:port binding="this:TuftsType-Text.SA_http" name="TuftsType-Text.SA_port">
+              <http:address location="http://processing01.lib.tufts.edu:8080/saxon/"/>
+            </wsdl:port>
+          </wsdl:service>
+          <wsdl:binding name="TuftsType-Text.SA_http" type="this:TuftsType-Text.SAPortType">
+            <http:binding verb="GET"/>
+            <wsdl:operation name="getClass">
+              <http:operation location="SaxonServlet?source=(DCA-META)&amp;style=(XSLT)&amp;clear-stylesheet-cache=(CLEAR_CACHE)&amp;class=(CLASS)"/>
+              <wsdl:input>
+                <http:urlReplacement/>
+              </wsdl:input>
+              <wsdl:output>
+                <mime:content type="text/xml"/>
+              </wsdl:output>
+            </wsdl:operation>
+            <wsdl:operation name="getType">
+              <http:operation location="SaxonServlet?source=(DCA-META)&amp;style=(XSLT)&amp;clear-stylesheet-cache=(CLEAR_CACHE)&amp;type=(TYPE)"/>
+              <wsdl:input>
+                <http:urlReplacement/>
+              </wsdl:input>
+              <wsdl:output>
+                <mime:content type="text/xml"/>
+              </wsdl:output>
+            </wsdl:operation>
+          </wsdl:binding>
+        </wsdl:definitions>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="RELS-EXT" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-03-03T22:00:14.250Z" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+      ID="RELS-EXT1.0" LABEL="RDF Statements about this object" MIMETYPE="application/rdf+xml" SIZE="595">
+      <foxml:xmlContent>
+        <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/sdep:Text.SA-TuftsType">
+            <fedora-model:isDeploymentOf rdf:resource="info:fedora/bdef:TuftsType"/>
+            <fedora-model:isContractorOf rdf:resource="info:fedora/cm:Text.SA"/>
+            <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDeployment-3.0"/>
+          </rdf:Description>
+        </rdf:RDF>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="E" ID="DS1" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-03-03T22:00:14.250Z" ID="DS1.0"
+      LABEL="Tufts Type Behavior Mechanism Documentation" MIMETYPE="text/html">
+      <foxml:contentLocation REF="http://dl.tufts.edu/docs/tufts/type/bmech.html" TYPE="URL"/>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="SERVICE-PROFILE" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-03-03T22:00:14.251Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.mets.techMD.OTHER.UNSPECIFIED" ID="SERVICE-PROFILE1.0"
+      LABEL="Service Profile - Technical description of the service" MIMETYPE="text/xml" SIZE="910">
+      <foxml:xmlContent>
+        <fsvp:serviceProfile bDefPID="bdef:TuftsType" name="XSLT Processor" xmlns:fsvp="http://fedora.comm.nsdlib.org/service/profile">
+          <fsvp:serviceDescription>Saxon XSLT Processor</fsvp:serviceDescription>
+          <fsvp:serviceImplementation>
+            <fsvp:serviceLiveTestURL>http://processing01.lib.tufts.edu:8080/saxon</fsvp:serviceLiveTestURL>
+            <fsvp:serviceMessagingProtocol>HTTP GET</fsvp:serviceMessagingProtocol>
+            <fsvp:serviceInputFormats>
+              <fsvp:MIMEType>text/xml</fsvp:MIMEType>
+            </fsvp:serviceInputFormats>
+            <fsvp:serviceOutputFormats>
+              <fsvp:MIMEType>text/xml</fsvp:MIMEType>
+              <fsvp:MIMEType>text/html</fsvp:MIMEType>
+            </fsvp:serviceOutputFormats>
+            <fsvp:serviceImplDependencies/>
+          </fsvp:serviceImplementation>
+        </fsvp:serviceProfile>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-03-03T22:00:14.252Z" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/"
+      ID="DC1.0" LABEL="Dublin Core Metadata for Service" MIMETYPE="text/xml" SIZE="473">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Tufts Type Behavior Mechanism - Text (SA)</dc:title>
+          <dc:identifier>bmech:TuftsType-Text.SA</dc:identifier>
+          <dc:identifier>sdep:Text.SA-TuftsType</dc:identifier>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>

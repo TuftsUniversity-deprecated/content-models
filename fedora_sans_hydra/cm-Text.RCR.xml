@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject PID="cm:Text.RCR" VERSION="1.1" xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+  <foxml:objectProperties>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE=""/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE=""/>
+    <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2010-05-07T14:00:00.000Z"/>
+    <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2010-07-01T13:36:38.926Z"/>
+  </foxml:objectProperties>
+  <foxml:datastream CONTROL_GROUP="X" ID="RELS-EXT" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-03-10T17:04:33.199Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="RELS-EXT.0" LABEL="Initial ingest"
+      MIMETYPE="text/xml" SIZE="1476">
+      <foxml:xmlContent>
+        <rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/cm:Text.RCR">
+            <fedora-model:hasService rdf:resource="info:fedora/bdef:TuftsReference" xmlns="info:fedora/fedora-system:def/model#"/>
+            <fedora-model:hasService rdf:resource="info:fedora/bdef:TuftsMetadata" xmlns="info:fedora/fedora-system:def/model#"/>
+            <fedora-model:hasService rdf:resource="info:fedora/bdef:TuftsArchival" xmlns="info:fedora/fedora-system:def/model#"/>
+            <fedora-model:hasService rdf:resource="info:fedora/bdef:AssetDef" xmlns="info:fedora/fedora-system:def/model#"/>
+            <fedora-model:hasService rdf:resource="info:fedora/bdef:TuftsAccessRights" xmlns="info:fedora/fedora-system:def/model#"/>
+            <fedora-model:hasService rdf:resource="info:fedora/bdef:TuftsType" xmlns="info:fedora/fedora-system:def/model#"/>
+            <fedora-model:hasService rdf:resource="info:fedora/sdef:TuftsRCR" xmlns="info:fedora/fedora-system:def/model#"/>
+            <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ContentModel-3.0" xmlns="info:fedora/fedora-system:def/model#"/>
+          </rdf:Description>
+        </rdf:RDF>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+  <foxml:datastream CONTROL_GROUP="X" ID="DC" STATE="A" VERSIONABLE="true">
+    <foxml:datastreamVersion CREATED="2010-02-26T14:00:00.000Z"
+      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="DC.0" LABEL="Initial ingest"
+      MIMETYPE="text/xml" SIZE="385">
+      <foxml:xmlContent>
+        <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+          <dc:title>Record Creator Record</dc:title>
+          <dc:identifier>cm:Text.RCR</dc:identifier>
+        </oai_dc:dc>
+      </foxml:xmlContent>
+    </foxml:datastreamVersion>
+  </foxml:datastream>
+</foxml:digitalObject>
