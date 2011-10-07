@@ -8,31 +8,6 @@
     <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2010-03-03T22:00:14.080Z"/>
     <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2010-07-01T13:37:25.503Z"/>
   </foxml:objectProperties>
-  <foxml:datastream CONTROL_GROUP="X" ID="AUDIT" STATE="A" VERSIONABLE="false">
-    <foxml:datastreamVersion CREATED="2010-03-03T22:00:14.080Z"
-      FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit" ID="AUDIT.0" LABEL="Audit Trail for this object" MIMETYPE="text/xml">
-      <foxml:xmlContent>
-        <audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
-          <audit:record ID="AUDREC1">
-            <audit:process type="Fedora API-M"/>
-            <audit:action>ingest</audit:action>
-            <audit:componentID/>
-            <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2010-03-03T22:00:14.080Z</audit:date>
-            <audit:justification>Ingested from local file /home/bgoodm01/sdep-Text.RCR-TuftsType.xml</audit:justification>
-          </audit:record>
-          <audit:record ID="AUDREC2">
-            <audit:process type="Fedora API-M"/>
-            <audit:action>ingest</audit:action>
-            <audit:componentID/>
-            <audit:responsibility>fedoraAdmin</audit:responsibility>
-            <audit:date>2010-07-01T13:37:25.503Z</audit:date>
-            <audit:justification>Ingested from local file /home/bgoodm01/sdep-Text.RCR-TuftsType.xml</audit:justification>
-          </audit:record>
-        </audit:auditTrail>
-      </foxml:xmlContent>
-    </foxml:datastreamVersion>
-  </foxml:datastream>
   <foxml:datastream CONTROL_GROUP="X" ID="DSINPUTSPEC" STATE="A" VERSIONABLE="true">
     <foxml:datastreamVersion CREATED="2010-03-03T22:00:14.246Z"
       FORMAT_URI="info:fedora/fedora-system:FedoraDSInputSpec-1.0" ID="DSINPUTSPEC1.0"
